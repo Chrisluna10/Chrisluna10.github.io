@@ -1,7 +1,7 @@
 const header = {
   // all the properties are optional - can be left empty or deleted
-  homepage: 'https://rajshekhar26.github.io/cleanfolio',
-  title: 'JS.',
+  homepage: 'https://Chrisluna10.github.io/portfolio',
+  title: 'CL',
 }
 
 const about = {
@@ -9,11 +9,11 @@ const about = {
   name: 'Chris Luna',
   role: 'Full-Stack Developer',
   description:
-    'Adipisicing sit fugit ullam unde aliquid sequi Facilis soluta facilis perspiciatis corporis nulla aspernatur. Autem eligendi rerum delectus modi quisquam? Illo ut quasi nemo ipsa cumque perspiciatis! Maiores minima consectetur.',
+    'I am a Full-Stack Web developer. Utilizing modern development tools like React and Rails to deliver powerful applications. I am passionate about problem solving and team building as well as learning new material to further my knowledge in coding. I created a mobile application with a team of developers at my previous position using React Native with Typescript and Ruby on rails that has been released to the Google Play store and Apple App store.',
   resume: 'https://example.com',
   social: {
-    linkedin: 'https://linkedin.com',
-    github: 'https://github.com',
+    linkedin: 'https://www.linkedin.com/in/chris-luna-09a755219/',
+    github: 'https://github.com/Chrisluna10',
   },
 }
 
@@ -21,29 +21,27 @@ const projects = [
   // projects can be added an removed
   // if there are no projects, Projects section won't show up
   {
-    name: 'Project 1',
+    name: 'Boopd',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'Boopd is a Capstone project I worked on with three other developers as our final project at LEARN Academy. Our goal was to create a pet-adoption-resource made with React and Ruby on Rails.',
+    stack: ['Ruby on Rails', 'postgreSQL', 'React'],
+    sourceCode: 'https://github.com/Chrisluna10/boopd',
   },
   {
-    name: 'Project 2',
+    name: 'Marketplace App',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
+      'This Marketplace project was created to showcase my full-stack development skills with a React.js frontend and Ruby on Rails backend. I went off of OfferUps website as inspiration for styling this application. In this Marketplace project, a user is able to create an account and utilize full CRUD functionality to post items for other users to see. I implemented devise, modified the controllers and added rails serializers to display specific information from the user when they post their item.',
+    stack: ['Ruby on Rails', 'postgreSQL', 'React'],
+    sourceCode: 'https://github.com/Chrisluna10/marketplace-app',
   },
-  {
-    name: 'Project 3',
-    description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: 'https://github.com',
-  },
+  // {
+  //   name: 'Project 3',
+  //   description:
+  //     'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
+  //   stack: ['SASS', 'TypeScript', 'React'],
+  //   sourceCode: 'https://github.com',
+  //   livePreview: 'https://github.com',
+  // },
 ]
 
 const skills = [
@@ -54,18 +52,18 @@ const skills = [
   'JavaScript',
   'TypeScript',
   'React',
-  'Redux',
-  'SASS',
+  'Ruby',
+  'Rails',
+  'PostgreSQL',
   'Material UI',
   'Git',
-  'CI/CD',
   'Jest',
   'Enzyme',
 ]
 
 const contact = {
   // email is optional - if left empty Contact section won't show up
-  email: 'johnsmith@mail.com',
+  email: 'chrisluna4224@gmail.com',
 }
 
 export { header, about, projects, skills, contact }
