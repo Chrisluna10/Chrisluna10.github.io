@@ -33,7 +33,6 @@ const projects = [
       'This Marketplace project was created to showcase my full-stack development skills with a React.js frontend and Ruby on Rails backend. The web application is hosted on Heroku with AWS S3. I went off of OfferUps website as inspiration for styling this application. In this Marketplace project, a user is able to create an account and utilize full CRUD functionality to post items for other users to see. I implemented devise, modified the controllers and added rails serializers to display specific information from the user when they post their item.',
     stack: ['Ruby on Rails', 'postgreSQL', 'React'],
     sourceCode: 'https://github.com/Chrisluna10/marketplace-app',
-    livePreview: 'https://marketplace-app-cl.herokuapp.com/',
   },
   // {
   //   name: 'Project 3',
