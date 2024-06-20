@@ -12,6 +12,8 @@
 
     <!-- Custom styles for this template -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -41,52 +43,43 @@
 </nav>
 
 <main role="main" class="container-fluid">
-    <h2>Carousel</h2>
-    <div id="webd-carouselIndicators" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#webd-carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#webd-carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#webd-carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#webd-carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="images/photo-1.avif" class="d-block w-100" alt="...">
-                <p>Male Climber repelling down</p>
-            </div>
-            <div class="carousel-item">
-                <img src="images/photo-2.avif" class="d-block w-100" alt="...">
-                <p>Male Climber lead climbing in a cave over water</p>
-            </div>
-            <div class="carousel-item">
-                <img src="images/photo-3.avif" class="d-block w-100" alt="...">
-                <p>Climber resting on a route in the desert</p>
-            </div>
-            <div class="carousel-item">
-                <img src="images/photo-4.avif" class="d-block w-100" alt="...">
-                <p>Sillouete of a climber taking a rest</p>
-            </div>
+    <div id="h1"></div>
+    <div id="img"></div>
+    <div id="content"></div>
 
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#webd-carouselIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#webd-carouselIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    <script type="text/babel">
+        const user = {
+            name: 'Chris Luna',
+            imageUrl: 'images/climber.webp',
+            bio: 'Passionate climber dedicated to preserving our natural climbing environments.'
+        };
+
+        // Step one - Create a React element
+        const UserProfile = () => (
+            <div>
+                <h1>{user.name}</h1>
+                <img src={user.imageUrl} alt="User Profile" className="img-fluid mb-3" />
+                <p>{user.bio}</p>
+            </div>
+        );
+
+        // Render React components into respective divs
+        ReactDOM.render(<UserProfile />, document.getElementById('h1'));
+        ReactDOM.render(<img src={user.imageUrl} alt="User Profile" className="img-fluid mb-3" />, document.getElementById('img'));
+        ReactDOM.render(<p>{user.bio}</p>, document.getElementById('content'))
+        // Step 2: Render the React element
+
+    </script>
 
 </main><!-- /.container -->
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
 
 </body>
 </html>
